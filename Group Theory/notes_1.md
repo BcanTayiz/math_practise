@@ -58,3 +58,28 @@ e is identity element, therefore any element from group every element should fol
 
 This property of abelian group is not generalzied in all groups. Therefore, commutativity is not an axiom in the system.
 
+
+## Symmetric Groups
+
+Symettric group is n element system composed by permutations of n elements. It is very abstract topic.
+
+### Axioms:
+* identity element exists,
+* Inverse exists for every element,
+* Associativity (στ)ρ=σ(τρ)
+* Closed
+
+```math
+
+ S_{3} = \left\{1,2,3\right\} \\[10px]
+ Permutations \left\{1,2,3\right\} \\[10px]
+ (1,2,3) → (1,2,3)\\[10px]
+ (1,2,3) → (2,1,3)\\[10px]
+ (1,2,3) → (3,2,1)\\[10px]
+ (1,2,3) → (2,3,1)\\[10px]
+ (1,2,3) → (3,1,2)\\[10px]
+ (1,2,3) → (1,3,2)\\[10px]
+```
+
+
+# Finite Cyclic Groups
