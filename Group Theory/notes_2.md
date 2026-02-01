@@ -5,11 +5,15 @@ By closed systems, closed operational symmetry could be named as Isomorphic grou
 Bijective rule applies fro isomoprhic groups
 
 ```math
-Y: G \to G^-1 \\[10px]
+Y: G \to G^{-1}\\[10px]
 \text{bijective process}\\[10px]
 Y(\,a\,o\,b) = Y(a) \, o \, Y(b)
 
 
 ```
+
+
+
+
 
 

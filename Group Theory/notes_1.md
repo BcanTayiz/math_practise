@@ -1,5 +1,18 @@
 # Groups
 
+Group theory studies symmetries. It depends on object's symettric behavior.
+
+**Def**: A group G is a set with an operation 
+```math
+
+G \times G \to G \\[10px]
+(g1,g2) \to g1,g2
+ 
+```
+
+
+
+
 ```math
 x + y => \text{composition} \\[10px]
 
