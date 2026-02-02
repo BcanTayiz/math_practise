@@ -80,3 +80,78 @@ x = 0 \\[10px]
 1 - S = primes
 
 ```
+
+## Change of Function
+
+I changed the function and result is 
+
+```Python
+
+class PrimeSime(NumberSum):
+
+    def __init__(self):
+        super().__init__()
+
+
+    def prime_sum_fomrula(self):
+        x = 0
+        for i in range(len(self.prime_nums)):
+            a = random.choice((2,4,6,8,10))
+            val = a
+            for j in range(1,val):
+                if a > j:
+                    a -= (val / j)
+
+            x += a
+        return 1- abs(x / self.n)
+
+    def prime_count(self):
+        return len(self.prime_nums)
+ 
+    
+    def plot_arr(self,arr):
+        sns.lineplot(arr)
+        plt.show()
+        
+
+```
+as you can see, prime numbers are not needed for the process and when we log the results, plot is like this:
+
+![ratios of primes](image-2.png)
+![ln values converges to 2](image-3.png)
+
+### Mathematical formula
+
+we can state that 
+
+```math
+x = 0 \\[10px]
+\sum_{x=S}^{S=\infty} (x + (6)) - \frac{x}{21} = S \\[10px]
+
+
+ln((1-(\frac{S}{n})) \cdot n) - ln(\pi(n)) = 2 \\[10px]
+\frac {(n-S)}{\pi(n)} = e^{2} \\[10px]
+\pi(n) = \frac {(n-S)}{e^{2} }
+
+
+```
+
+let's test that...
+
+```Python
+
+def prime_sum_fomrula(self):
+        x = 0
+        for i in range(len(self.prime_nums)):
+            a = random.choice((2,4,6,8,10))
+            val = a
+            for j in range(1,val):
+                if a > j:
+                    a -= (val / j)
+
+            x += a
+        return (self.n - x) / (math.e)**2
+
+```
+
+this adjustment converges to 1 but then increases with log. Eventually, there is a such equality and we can show that like this
