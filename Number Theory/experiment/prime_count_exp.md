@@ -1,4 +1,4 @@
-# Prime Sum -- Dynamic Formula
+# Prime Count -- Dynamic Formula
 
 I have created a formula for prime counting.
 It counts the differences and finds the values. The formula is as below
