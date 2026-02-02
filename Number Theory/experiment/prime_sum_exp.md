@@ -155,3 +155,6 @@ def prime_sum_fomrula(self):
 ```
 
 this adjustment converges to 1 but then increases with log. Eventually, there is a such equality and we can show that like this
+
+
+![prime sum converges and diverges](image-4.png)
